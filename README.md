@@ -48,14 +48,3 @@ I (...) mpu6050_app: ACC[g] x=  0.00 y=  0.00 z=  1.00 | GYRO[dps] x=   0.00 y= 
 ```
 
 É possível alterar a aceleração e a rotação clicando no MPU6050 durante a simulação.
-
-## Evidências para a entrega
-
-Capture imagens legíveis mostrando:
-
-1. ESP-IDF configurado no VS Code e conta/licença do Wokwi ativa.
-2. Circuito completo no Wokwi, com os quatro fios visíveis.
-3. Terminal do build exibindo `Project build complete`.
-4. Simulação e monitor serial exibindo várias leituras do MPU6050.
-
-Não inclua a pasta `build` no Git. Depois de validar as evidências, publique este projeto em um repositório e envie o respectivo link.
