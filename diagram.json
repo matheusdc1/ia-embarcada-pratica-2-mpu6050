@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "Matheus Dalla Costa",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": { "builder": "esp-idf" }
+    },
+    { "type": "wokwi-mpu6050", "id": "imu1", "top": 42.22, "left": -180.08, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3.1", "imu1:VCC", "red", [ "v-0.18", "h-110.68" ] ],
+    [ "esp:9", "imu1:SCL", "gold", [ "h-81.88", "v-153.78", "h-48" ] ],
+    [ "esp:8", "imu1:SDA", "blue", [ "h-72.28", "v-144.18", "h-67.2" ] ],
+    [ "esp:GND.2", "imu1:GND", "black", [ "v-57.78", "h-206.63" ] ]
+  ],
+  "dependencies": {}
+}
